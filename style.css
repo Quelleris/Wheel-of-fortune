@@ -1,0 +1,64 @@
+:root { 
+    /* COLORS  */
+    --charcoal: hsla(197, 37%, 24%, 1);
+    --persian-green: hsla(173, 58%, 39%, 1);
+    --maize-crayola: hsla(43, 74%, 66%, 1);
+    --sandy-brown: hsla(27, 87%, 67%, 1);
+    --sandy-brown-hover: hsla(27, 87%, 75%, 1);
+    --burnt-sienna: hsla(12, 76%, 61%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cornsilk);
+    font-size: 1rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#canvas {
+    z-index: 1;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 3px solid black;
+	position: absolute;
+	top: 14%;
+	left:50%;
+	transform: translateX(-50%);
+    z-index: 999;
+}
+
+button {
+    height: 60px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+}
