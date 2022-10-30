@@ -1,11 +1,5 @@
 :root { 
     /* COLORS  */
-    --charcoal: hsla(197, 37%, 24%, 1);
-    --persian-green: hsla(173, 58%, 39%, 1);
-    --maize-crayola: hsla(43, 74%, 66%, 1);
-    --sandy-brown: hsla(27, 87%, 67%, 1);
-    --sandy-brown-hover: hsla(27, 87%, 75%, 1);
-    --burnt-sienna: hsla(12, 76%, 61%, 1);
     --cornsilk: hsla(52, 94%, 94%, 1);
 }
 
@@ -35,14 +29,18 @@ body {
     overflow: hidden;
 }
 
+.container {
+    position: relative;
+}
+
 #canvas {
     z-index: 1;
 }
 
 .arrow {
 	position: absolute;
-	top: 14%;
-	left:50%;
+	top: 0;
+	left: 50%;
 	transform: translateX(-50%);
     z-index: 999;
     width: 0; 
@@ -52,19 +50,11 @@ body {
     border-top: 40px solid #f00;
 }
 
-.arrow:before {
-    position: relative;
-    background-color: black;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid black;
-}
-
 button {
-    height: 60px;
+    height: 70px;
     aspect-ratio: 1;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translateX(-50%);
     border: 5px solid black;
