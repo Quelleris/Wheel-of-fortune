@@ -21,7 +21,7 @@ let theWheel = new Winwheel({
 
 const btn = document.querySelector('#spin-btn');
 const canvas = document.querySelector('#canvas')
-const audio = new Audio('Kids_Music_3.wav');
+const audio = new Audio('/audio/Kids_Music_3.wav');
 let deg = 0;
 
 btn.addEventListener('click', () => {
